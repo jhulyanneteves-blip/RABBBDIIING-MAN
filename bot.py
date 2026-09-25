@@ -451,7 +451,7 @@ class Controller:
         self.admins = db.get_admins()
         self.master = db.get_setting("master", None)
         self.speed = db.get_setting("speed", 2.0)
-        self.prefix = db.get_setting("prefix", "/")
+        self.prefix = db.get_setting("prefix", ".")
         self.attack_start_times = {}
         for owner in _K_LIST:
             try:
